@@ -82,21 +82,6 @@ fn main() {
 
     match resultado {
         Some(nodo) => {
-            // let mut pila: Vec<Rc<Node>> = Vec::new();
-            //
-            // let mut actual = &nodo.nodo_padre;
-            // pila.push(Rc::clone(&nodo));
-            //
-            // while let Some(nodo_padre) = actual {
-            //     pila.push(Rc::clone(&nodo_padre));
-            //     actual = &nodo_padre.nodo_padre;
-            // }
-            // 
-            // for node in pila.into_iter().rev() {
-            //     imprimir_estado(&node.estado_actual, true);
-            //     println!("");
-            // }
-            //
             println!("Resultado ---------------------------------->\nFunción heurística final: {}\nPasos hacia la solución: {}\n", &nodo.costo_funcion, &nodo.costo_operador);
             imprimir_estado(&nodo.estado_actual, true);
         },
